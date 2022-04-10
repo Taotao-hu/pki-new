@@ -67,7 +67,7 @@
 </div>
 
 
-        <!--<form action="<%=path%>/users/register.do" method="post">
+<!--<form action="<%=path%>/users/register.do" method="post">
     <input name="UName" type="text" placeholder="用户名"/>
     <input name="UPsd" type="password" placeholder="密码"/>
     <select id="proviace" name="UType">
@@ -100,11 +100,11 @@
             data: data,
             type: 'POST',
             success: function (data) {
-                if (data.successful === true) {//普通用户
+             //   if (data === 'login') {//普通用户
                     window.location.href = "<%=path%>/users/index.do";
-                } else {
-                    layer.msg("用户名或密码错误");
-                }
+                //} else {
+                  //  layer.msg("用户名或密码错误");
+              //  }
             },
             error: function (ero) {
                 layer.msg("系统异常，请联系超级管理员");
